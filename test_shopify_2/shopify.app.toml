@@ -1,0 +1,12 @@
+# Shopify App - Address Confirm
+# A minimal app that embeds an address confirmation component on the Order Status page
+name = "address-confirm"
+handle = "address-confirm"
+extension_directories = ["extensions/"]
+
+[access_scopes]
+# No API scopes required - this app runs entirely in the browser
+scopes = ""
+
+[build]
+automatically_update_urls_on_dev = true

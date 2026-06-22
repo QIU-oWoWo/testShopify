@@ -1,0 +1,21 @@
+# Extension: Address Confirm
+# Appears as a block on the Order Status (Thank You) page
+type = "checkout_ui_extension"
+name = "address-confirm"
+
+[[extensions]]
+handle = "address-confirm"
+name = "Address Confirm"
+type = "checkout_ui_extension"
+description = "Allow customers to review and edit their shipping address on the order status page"
+
+  [[extensions.targeting]]
+  # The Thank You / Order Status page block render target
+  target = "purchase.thank-you.block.render"
+  module = "./src/index.jsx"
+
+# This extension does NOT need network access, API access, or block progress
+[capabilities]
+network_access = false
+block_progress = false
+api_access = false
